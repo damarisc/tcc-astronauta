@@ -1,0 +1,155 @@
+[gd_scene load_steps=10 format=1]
+
+[ext_resource path="res://scripts/TemporaryMainMenu.gd" type="Script" id=1]
+[ext_resource path="res://assets/TempMainMenu/CandyCrush.png" type="Texture" id=2]
+[ext_resource path="res://assets/TempMainMenu/FlappyBird.png" type="Texture" id=3]
+[ext_resource path="res://assets/TempMainMenu/FruitsNinja.png" type="Texture" id=4]
+[ext_resource path="res://assets/TempMainMenu/pacman.png" type="Texture" id=5]
+[ext_resource path="res://assets/TempMainMenu/Spinner.png" type="Texture" id=6]
+[ext_resource path="res://assets/TempMainMenu/SuperMario.png" type="Texture" id=7]
+[ext_resource path="res://assets/TempMainMenu/Timberman.png" type="Texture" id=8]
+[ext_resource path="res://assets/TempMainMenu/rocket.png" type="Texture" id=9]
+
+[node name="Game" type="Node"]
+
+[node name="TemporaryMainMenu" type="Node2D" parent="."]
+
+script/script = ExtResource( 1 )
+
+[node name="ColorFrame" type="ColorFrame" parent="TemporaryMainMenu"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 800.0
+margin/bottom = 1280.0
+color = Color( 0.814391, 0.779221, 0.871094, 1 )
+
+[node name="GoToCandyCrush" type="TouchScreenButton" parent="TemporaryMainMenu"]
+
+transform/pos = Vector2( 107, 90 )
+transform/scale = Vector2( 1.5, 1.5 )
+normal = ExtResource( 2 )
+pressed = null
+bitmask = null
+shape = null
+shape_centered = true
+shape_visible = true
+passby_press = false
+action = ""
+visibility_mode = 0
+
+[node name="GoToFlappyBird" type="TouchScreenButton" parent="TemporaryMainMenu"]
+
+transform/pos = Vector2( 505.035, 82.4474 )
+transform/scale = Vector2( 0.4, 0.4 )
+normal = ExtResource( 3 )
+pressed = null
+bitmask = null
+shape = null
+shape_centered = true
+shape_visible = true
+passby_press = false
+action = ""
+visibility_mode = 0
+
+[node name="GoToFuitNinja" type="TouchScreenButton" parent="TemporaryMainMenu"]
+
+transform/pos = Vector2( 107, 360 )
+transform/scale = Vector2( 0.45, 0.45 )
+normal = ExtResource( 4 )
+pressed = null
+bitmask = null
+shape = null
+shape_centered = true
+shape_visible = true
+passby_press = false
+action = ""
+visibility_mode = 0
+
+[node name="GoToPacMan" type="TouchScreenButton" parent="TemporaryMainMenu"]
+
+transform/pos = Vector2( 509.097, 376.255 )
+transform/scale = Vector2( 3.00488, 2.95953 )
+normal = ExtResource( 5 )
+pressed = null
+bitmask = null
+shape = null
+shape_centered = true
+shape_visible = true
+passby_press = false
+action = ""
+visibility_mode = 0
+
+[node name="GoToSpinner" type="TouchScreenButton" parent="TemporaryMainMenu"]
+
+transform/pos = Vector2( 78.7043, 655.489 )
+transform/scale = Vector2( 0.9, 0.9 )
+normal = ExtResource( 6 )
+pressed = null
+bitmask = null
+shape = null
+shape_centered = true
+shape_visible = true
+passby_press = false
+action = ""
+visibility_mode = 0
+
+[node name="GoToSuperMario" type="TouchScreenButton" parent="TemporaryMainMenu"]
+
+transform/pos = Vector2( 507.575, 671.068 )
+transform/scale = Vector2( 2.7, 2.7 )
+normal = ExtResource( 7 )
+pressed = null
+bitmask = null
+shape = null
+shape_centered = true
+shape_visible = true
+passby_press = false
+action = ""
+visibility_mode = 0
+
+[node name="GoToTimberMan" type="TouchScreenButton" parent="TemporaryMainMenu"]
+
+transform/pos = Vector2( 80.8729, 963.338 )
+transform/scale = Vector2( 0.45, 0.45 )
+normal = ExtResource( 8 )
+pressed = null
+bitmask = null
+shape = null
+shape_centered = true
+shape_visible = true
+passby_press = false
+action = ""
+visibility_mode = 0
+
+[node name="GoToRocketGame" type="TouchScreenButton" parent="TemporaryMainMenu"]
+
+transform/pos = Vector2( 493.794, 977.064 )
+transform/scale = Vector2( 0.4, 0.4 )
+normal = ExtResource( 9 )
+pressed = null
+bitmask = null
+shape = null
+shape_centered = true
+shape_visible = true
+passby_press = false
+action = ""
+visibility_mode = 0
+
+[connection signal="pressed" from="TemporaryMainMenu/GoToCandyCrush" to="TemporaryMainMenu" method="_on_GoToCandyCrush_pressed"]
+
+[connection signal="pressed" from="TemporaryMainMenu/GoToFlappyBird" to="TemporaryMainMenu" method="_on_GoToFlappyBird_pressed"]
+
+[connection signal="pressed" from="TemporaryMainMenu/GoToFuitNinja" to="TemporaryMainMenu" method="_on_GoToFuitNinja_pressed"]
+
+[connection signal="pressed" from="TemporaryMainMenu/GoToSpinner" to="TemporaryMainMenu" method="_on_GoToSpinner_pressed"]
+
+[connection signal="pressed" from="TemporaryMainMenu/GoToSuperMario" to="TemporaryMainMenu" method="_on_GoToSuperMario_pressed"]
+
+[connection signal="pressed" from="TemporaryMainMenu/GoToTimberMan" to="TemporaryMainMenu" method="_on_GoToTimberMan_pressed"]
+
+
