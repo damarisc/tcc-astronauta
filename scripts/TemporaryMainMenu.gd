@@ -17,3 +17,7 @@ func _on_GoToSuperMario_pressed(): #precisa arrumar
 
 func _on_GoToCandyCrush_pressed():
 	Transition.fade_to("res://scenes/Candy/SplashScreen.tscn")
+
+func _on_GoToPacMan_pressed():
+	Transition.fade_to("res://scenes/Pacman/Game.tscn")
+

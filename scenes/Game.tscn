@@ -22,10 +22,10 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 0.0
-margin/top = 0.0
-margin/right = 800.0
-margin/bottom = 1280.0
+margin/left = 6.0
+margin/top = -8.0
+margin/right = 806.0
+margin/bottom = 1272.0
 color = Color( 0.814391, 0.779221, 0.871094, 1 )
 
 [node name="GoToCandyCrush" type="TouchScreenButton" parent="TemporaryMainMenu"]
@@ -145,6 +145,8 @@ visibility_mode = 0
 [connection signal="pressed" from="TemporaryMainMenu/GoToFlappyBird" to="TemporaryMainMenu" method="_on_GoToFlappyBird_pressed"]
 
 [connection signal="pressed" from="TemporaryMainMenu/GoToFuitNinja" to="TemporaryMainMenu" method="_on_GoToFuitNinja_pressed"]
+
+[connection signal="pressed" from="TemporaryMainMenu/GoToPacMan" to="TemporaryMainMenu" method="_on_GoToPacMan_pressed"]
 
 [connection signal="pressed" from="TemporaryMainMenu/GoToSpinner" to="TemporaryMainMenu" method="_on_GoToSpinner_pressed"]
 
